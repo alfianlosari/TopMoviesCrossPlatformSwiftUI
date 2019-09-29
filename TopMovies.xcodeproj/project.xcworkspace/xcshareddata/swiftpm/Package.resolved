@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TMDbMovieKit",
+        "repositoryURL": "https://github.com/alfianlosari/TMDbMovieKit.git",
+        "state": {
+          "branch": null,
+          "revision": "5b8ff79b2cc01d7b8e63db2ae1201fc37417fbb8",
+          "version": "1.0.4"
+        }
+      },
+      {
+        "package": "TMDBMovieSwiftUIKit",
+        "repositoryURL": "https://github.com/alfianlosari/TMDbMovieSwiftUIKit",
+        "state": {
+          "branch": null,
+          "revision": "67758bb63f2c0fe912fe0f17ccee71ecddee962e",
+          "version": "0.2.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

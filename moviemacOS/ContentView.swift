@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  TopMovies WatchKit Extension
+//  moviemacOS
 //
 //  Created by Alfian Losari on 29/09/19.
 //  Copyright © 2019 Alfian Losari. All rights reserved.
