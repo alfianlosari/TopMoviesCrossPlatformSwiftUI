@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B7090A9234099E7001EEF8D /* TopMovies WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B7090A8234099E7001EEF8D /* TopMovies WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B7090AF234099E7001EEF8D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7090AD234099E7001EEF8D /* Interface.storyboard */; };
+		8B7090B1234099E8001EEF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7090B0234099E8001EEF8D /* Assets.xcassets */; };
+		8B7090B8234099E9001EEF8D /* TopMovies WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B7090B7234099E9001EEF8D /* TopMovies WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B7090BD234099E9001EEF8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7090BC234099E9001EEF8D /* ContentView.swift */; };
+		8B7090BF234099E9001EEF8D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7090BE234099E9001EEF8D /* HostingController.swift */; };
+		8B7090C1234099E9001EEF8D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7090C0234099E9001EEF8D /* ExtensionDelegate.swift */; };
+		8B7090C3234099E9001EEF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7090C2234099E9001EEF8D /* Assets.xcassets */; };
+		8B7090C6234099E9001EEF8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7090C5234099E9001EEF8D /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B7090AA234099E7001EEF8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B70909E234099E7001EEF8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7090A7234099E7001EEF8D;
+			remoteInfo = "TopMovies WatchKit App";
+		};
+		8B7090B9234099E9001EEF8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B70909E234099E7001EEF8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7090B6234099E9001EEF8D;
+			remoteInfo = "TopMovies WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B7090CD234099E9001EEF8D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B7090B8234099E9001EEF8D /* TopMovies WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B7090D1234099E9001EEF8D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8B7090A9234099E7001EEF8D /* TopMovies WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B7090A4234099E7001EEF8D /* TopMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7090A8234099E7001EEF8D /* TopMovies WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TopMovies WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7090AE234099E7001EEF8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8B7090B0234099E8001EEF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B7090B2234099E8001EEF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B7090B7234099E9001EEF8D /* TopMovies WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TopMovies WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7090BC234099E9001EEF8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B7090BE234099E9001EEF8D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		8B7090C0234099E9001EEF8D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8B7090C2234099E9001EEF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B7090C5234099E9001EEF8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B7090C7234099E9001EEF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B7090B4234099E9001EEF8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B70909D234099E7001EEF8D = {
+			isa = PBXGroup;
+			children = (
+				8B7090AC234099E7001EEF8D /* TopMovies WatchKit App */,
+				8B7090BB234099E9001EEF8D /* TopMovies WatchKit Extension */,
+				8B7090A5234099E7001EEF8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B7090A5234099E7001EEF8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B7090A4234099E7001EEF8D /* TopMovies.app */,
+				8B7090A8234099E7001EEF8D /* TopMovies WatchKit App.app */,
+				8B7090B7234099E9001EEF8D /* TopMovies WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B7090AC234099E7001EEF8D /* TopMovies WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8B7090AD234099E7001EEF8D /* Interface.storyboard */,
+				8B7090B0234099E8001EEF8D /* Assets.xcassets */,
+				8B7090B2234099E8001EEF8D /* Info.plist */,
+			);
+			path = "TopMovies WatchKit App";
+			sourceTree = "<group>";
+		};
+		8B7090BB234099E9001EEF8D /* TopMovies WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B7090BC234099E9001EEF8D /* ContentView.swift */,
+				8B7090BE234099E9001EEF8D /* HostingController.swift */,
+				8B7090C0234099E9001EEF8D /* ExtensionDelegate.swift */,
+				8B7090C2234099E9001EEF8D /* Assets.xcassets */,
+				8B7090C7234099E9001EEF8D /* Info.plist */,
+				8B7090C4234099E9001EEF8D /* Preview Content */,
+			);
+			path = "TopMovies WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8B7090C4234099E9001EEF8D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8B7090C5234099E9001EEF8D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B7090A3234099E7001EEF8D /* TopMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B7090D2234099E9001EEF8D /* Build configuration list for PBXNativeTarget "TopMovies" */;
+			buildPhases = (
+				8B7090A2234099E7001EEF8D /* Resources */,
+				8B7090D1234099E9001EEF8D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B7090AB234099E7001EEF8D /* PBXTargetDependency */,
+			);
+			name = TopMovies;
+			productName = TopMovies;
+			productReference = 8B7090A4234099E7001EEF8D /* TopMovies.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		8B7090A7234099E7001EEF8D /* TopMovies WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B7090CE234099E9001EEF8D /* Build configuration list for PBXNativeTarget "TopMovies WatchKit App" */;
+			buildPhases = (
+				8B7090A6234099E7001EEF8D /* Resources */,
+				8B7090CD234099E9001EEF8D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B7090BA234099E9001EEF8D /* PBXTargetDependency */,
+			);
+			name = "TopMovies WatchKit App";
+			productName = "TopMovies WatchKit App";
+			productReference = 8B7090A8234099E7001EEF8D /* TopMovies WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8B7090B6234099E9001EEF8D /* TopMovies WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B7090CA234099E9001EEF8D /* Build configuration list for PBXNativeTarget "TopMovies WatchKit Extension" */;
+			buildPhases = (
+				8B7090B3234099E9001EEF8D /* Sources */,
+				8B7090B4234099E9001EEF8D /* Frameworks */,
+				8B7090B5234099E9001EEF8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TopMovies WatchKit Extension";
+			productName = "TopMovies WatchKit Extension";
+			productReference = 8B7090B7234099E9001EEF8D /* TopMovies WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B70909E234099E7001EEF8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Alfian Losari";
+				TargetAttributes = {
+					8B7090A3234099E7001EEF8D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8B7090A7234099E7001EEF8D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					8B7090B6234099E9001EEF8D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 8B7090A1234099E7001EEF8D /* Build configuration list for PBXProject "TopMovies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B70909D234099E7001EEF8D;
+			productRefGroup = 8B7090A5234099E7001EEF8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B7090A3234099E7001EEF8D /* TopMovies */,
+				8B7090A7234099E7001EEF8D /* TopMovies WatchKit App */,
+				8B7090B6234099E9001EEF8D /* TopMovies WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B7090A2234099E7001EEF8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B7090A6234099E7001EEF8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7090B1234099E8001EEF8D /* Assets.xcassets in Resources */,
+				8B7090AF234099E7001EEF8D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B7090B5234099E9001EEF8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7090C6234099E9001EEF8D /* Preview Assets.xcassets in Resources */,
+				8B7090C3234099E9001EEF8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B7090B3234099E9001EEF8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7090BF234099E9001EEF8D /* HostingController.swift in Sources */,
+				8B7090BD234099E9001EEF8D /* ContentView.swift in Sources */,
+				8B7090C1234099E9001EEF8D /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B7090AB234099E7001EEF8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B7090A7234099E7001EEF8D /* TopMovies WatchKit App */;
+			targetProxy = 8B7090AA234099E7001EEF8D /* PBXContainerItemProxy */;
+		};
+		8B7090BA234099E9001EEF8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B7090B6234099E9001EEF8D /* TopMovies WatchKit Extension */;
+			targetProxy = 8B7090B9234099E9001EEF8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B7090AD234099E7001EEF8D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B7090AE234099E7001EEF8D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B7090C8234099E9001EEF8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B7090C9234099E9001EEF8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B7090CB234099E9001EEF8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TopMovies WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TopMovies WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.TopMovies.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		8B7090CC234099E9001EEF8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TopMovies WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TopMovies WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.TopMovies.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		8B7090CF234099E9001EEF8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				IBSC_MODULE = TopMovies_WatchKit_Extension;
+				INFOPLIST_FILE = "TopMovies WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.TopMovies.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		8B7090D0234099E9001EEF8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				IBSC_MODULE = TopMovies_WatchKit_Extension;
+				INFOPLIST_FILE = "TopMovies WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.TopMovies.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		8B7090D3234099E9001EEF8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.TopMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8B7090D4234099E9001EEF8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C2XD9H2JS;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.TopMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B7090A1234099E7001EEF8D /* Build configuration list for PBXProject "TopMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7090C8234099E9001EEF8D /* Debug */,
+				8B7090C9234099E9001EEF8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B7090CA234099E9001EEF8D /* Build configuration list for PBXNativeTarget "TopMovies WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7090CB234099E9001EEF8D /* Debug */,
+				8B7090CC234099E9001EEF8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B7090CE234099E9001EEF8D /* Build configuration list for PBXNativeTarget "TopMovies WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7090CF234099E9001EEF8D /* Debug */,
+				8B7090D0234099E9001EEF8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B7090D2234099E9001EEF8D /* Build configuration list for PBXNativeTarget "TopMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7090D3234099E9001EEF8D /* Debug */,
+				8B7090D4234099E9001EEF8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B70909E234099E7001EEF8D /* Project object */;
+}
